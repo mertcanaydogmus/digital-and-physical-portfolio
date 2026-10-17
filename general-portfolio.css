@@ -1,0 +1,35 @@
+/* Category structure extends the original digital portfolio. */
+.project-columns { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:28px 40px; }
+.project-category { min-width:0; scroll-margin-top:120px; display:grid; grid-template-rows:subgrid; grid-row:1 / span 4; gap:28px; }
+.digital-products { grid-column:1; }
+.physical-products { grid-column:2; }
+.category-heading { display:flex; align-items:start; justify-content:space-between; gap:16px; }
+.category-heading h3 { font-size:clamp(25px,2.4vw,36px); font-weight:300; letter-spacing:.01em; }
+.category-heading p { margin-top:12px; color:var(--muted); font-size:15px; font-weight:300; }
+.category-heading>span { padding-top:10px; color:var(--muted); font-size:12px; letter-spacing:.12em; white-space:nowrap; }
+.portfolio-shell .card-copy h4 { font-size:clamp(19px,1.5vw,24px); font-weight:400; letter-spacing:0; }
+.portfolio-shell .card-copy h4 span { margin-right:4px; color:#a7b2cb; font-weight:300; }
+.project-category .project-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); grid-template-rows:subgrid; grid-row:2 / span 3; gap:24px; }
+.project-category .card-image img { aspect-ratio:1.05; }
+.physical-products .card-image { background:#171719; }
+.physical-products .card-image img { width:100%; height:auto; object-fit:cover; object-position:center; }
+.physical-products a[href="prodesign.html"] .card-image img { object-position:80% center; }
+@media(min-width:901px) and (max-width:1200px) {
+  .project-columns { column-gap:28px; }
+  .project-category .project-grid { column-gap:18px; }
+  .project-category .project-card>a { padding:16px; }
+  .category-heading>span { font-size:10px; }
+}
+@media(max-width:900px) {
+  .project-columns,.project-category { display:block; }
+  .project-category .project-grid { grid-template-rows:none; }
+  .category-heading { margin-bottom:28px; }
+  .project-category+.project-category { margin-top:48px; padding-top:36px; border-top:1px solid var(--line); }
+}
+@media(max-width:600px) {
+  .project-category .project-grid { grid-template-columns:1fr; }
+  .project-category .card-image img { aspect-ratio:1; }
+  .category-heading { flex-direction:column; gap:12px; }
+  .category-heading>span { padding-top:0; }
+  .project-category { scroll-margin-top:130px; }
+}

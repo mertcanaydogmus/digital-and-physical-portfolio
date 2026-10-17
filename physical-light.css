@@ -1,0 +1,14 @@
+/* Physical case studies share the digital case studies' white canvas. */
+.physical-case { color-scheme:light; --ink:#141a24; --muted:#647080; --line:#e1e5ee; --accent:#03229a; background:#fff; color:var(--ink); }
+.physical-case .feature-cover { background:#fff; }
+.physical-case .espresso-logo img,
+.physical-case .espresso-icon { filter:none; }
+.physical-case .study-image,
+.physical-case .study-image a,
+.physical-case .scenario-steps figure,
+.physical-case .inline-diagram img,
+.physical-case .initial-transition,
+.physical-case .initial-mockups img { background:#fff; }
+.physical-case .next-work { background:#fff; color:var(--ink); border-top:1px solid var(--line); }
+.physical-case .next-work small { color:var(--muted); }
+.physical-case .next-work a:hover .open-icon { background:var(--ink); color:#fff; }
