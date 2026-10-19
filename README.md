@@ -2,8 +2,8 @@
 
 Combined static portfolio based on portfolio.github.
 
-- Digital Products: Commencium, teddy, Metuvation, UX Case Study.
-- Physical Products: XFLARE, HARMA E-BRT, Mobile Infirmary, ProDesign, Maffilato, Wardrobe.
+- UX/UI Design: Commencium, teddy, Metuvation, UX Case Study.
+- Industrial Design: XFLARE, HARMA E-BRT, Mobile Infirmary, ProDesign, Maffilato, Wardrobe.
 - Physical case studies use a white background.
 - Original source folders remain unchanged.
 

@@ -1,5 +1,5 @@
 /* Category structure extends the original digital portfolio. */
-.project-columns { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:28px 40px; }
+.project-columns { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:28px 64px; }
 .project-category { min-width:0; scroll-margin-top:120px; display:grid; grid-template-rows:subgrid; grid-row:1 / span 4; gap:28px; }
 .digital-products { grid-column:1; }
 .physical-products { grid-column:2; }
@@ -15,7 +15,7 @@
 .physical-products .card-image img { width:100%; height:auto; object-fit:cover; object-position:center; }
 .physical-products a[href="prodesign.html"] .card-image img { object-position:80% center; }
 @media(min-width:901px) and (max-width:1200px) {
-  .project-columns { column-gap:28px; }
+  .project-columns { column-gap:44px; }
   .project-category .project-grid { column-gap:18px; }
   .project-category .project-card>a { padding:16px; }
   .category-heading>span { font-size:10px; }
